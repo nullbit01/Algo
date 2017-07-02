@@ -26,9 +26,6 @@ fi.close()
 prim = [1]*2000005
 
 for i in range(2, N):
-    prim.append(1)
-
-for i in range(2, N):
     if prim[i] == 1:
         cnt += 1
         for j in range(i+i, N, i):
